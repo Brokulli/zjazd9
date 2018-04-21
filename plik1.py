@@ -14,7 +14,9 @@ a,b,c=x.exec_command("cat /etc/passwd") # zmiana wywolywanej komendy
 wynik = b.read()
 listaElementow = wynik.split('\n') # tnie na linijki
 
-# print(wynik)
+# print(wynik) drukuje wszystkie wyniki
+
+# robimy petle aby zredukowac liste wyswietlanych wynikow
 
 for element in listaElementow: # szukamy elementu w liscie
     if element.find("tester01")>=0: # jesli znajdzie to print i break
