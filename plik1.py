@@ -11,12 +11,13 @@ a,b,c=x.exec_command("cat /etc/passwd") # zmiana wywolywanej komendy
 wynik = b.read()
 listaElementow = wynik.split('\n') # tnie na linijki
 
-print(wynik)
+# print(wynik) 
 
 for element in listaElementow: # szukamy elementu w liscie
     if element.find("tester01")>=0:
         print("element find, user 'tester01' exists")
-    else:
-        print("element not found")
+        break
+    # else:
+    #     print("element not found")
 
 print("Hello Patrycja")
