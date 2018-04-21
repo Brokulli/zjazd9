@@ -15,7 +15,7 @@ print(wynik)
 
 for element in listaElementow: # szukamy elementu w liscie
     if element.find("tester01")>=0:
-        print("element find")
+        print("element find, user 'tester01' exists")
     else:
         print("element not found")
 
