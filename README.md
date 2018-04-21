@@ -14,9 +14,10 @@
 piszemy program, który sprawdzi czy mamy "ownuser"
 
   1. tworzymy plik1.py
+
     na początku pliku .py musi być zawsze: #! /usr/bin/python
 
     # komenda w terminalu: chmod 755 nazwaPliku.py zmienia uprawnienia
 
     plik1.py na podstawie SSH Example
-    # tworząc plik odwołujemy się do wcześniej utworzonego użytkownika
+    - tworząc plik odwołujemy się do wcześniej utworzonego użytkownika
