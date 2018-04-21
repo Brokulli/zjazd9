@@ -10,10 +10,10 @@
     adduser tester01
     passwd tester01 (zmiana hasła dla tester01)
 
-SSH Library - exercise
-- piszemy program, który sprawdzi czy mamy "ownuser"
+# SSH Library - exercise
+piszemy program, który sprawdzi czy mamy "ownuser"
 
-1. tworzymy plik1.py
+  1. tworzymy plik1.py
     na początku pliku .py musi być zawsze: #! /usr/bin/python
 
     # komenda w terminalu: chmod 755 nazwaPliku.py zmienia uprawnienia
