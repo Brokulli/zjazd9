@@ -1,6 +1,9 @@
 #! /usr/bin/python
 
 import paramiko # wczytuje paramiko
+import re # import biblioteki wyrazen regularnych
+
+print("Hello Patrycja")
 
 x=paramiko.SSHClient()
 type(x)
@@ -27,4 +30,14 @@ for element in listaElementow: # szukamy elementu, ktory nie istnieje w liscie
 else:
     print("element not found, user 'myownuser' not exists")
 
-print("Hello Patrycja")
+# z wykorzystaniem wyrazen regularnych (wczesniej nalezy je zaimportowac)
+
+for element in listaElementow: # szukamy elementu w liscie
+    if re.search("tester01",element): # warunek jako wyrazenie regularne
+        print("element find, user 'tester01' exists")
+        break # jesli nie znajdzie to else i print
+else:
+    print("element not found, user 'tester01' not exists")
+
+
+print("Goodbye")
