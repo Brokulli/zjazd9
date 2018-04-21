@@ -21,3 +21,5 @@ piszemy program, który sprawdzi czy mamy "ownuser"
 
     plik1.py na podstawie SSH Example
     - tworząc plik odwołujemy się do wcześniej utworzonego użytkownika
+
+  2. 
