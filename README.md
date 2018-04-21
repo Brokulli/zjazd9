@@ -22,4 +22,6 @@ piszemy program, który sprawdzi czy mamy "ownuser"
     plik1.py na podstawie SSH Example
     - tworząc plik odwołujemy się do wcześniej utworzonego użytkownika
 
-  2. 
+  2. tworzymy plik2.py
+
+    zmieniamy "cat /etc/passwd" na "cat /proc/cpuinfo"
