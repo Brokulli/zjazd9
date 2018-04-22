@@ -17,7 +17,7 @@ My test 02
 My test 03
   My log 03
 
-My test 04
+My test 04 SSH
   Open Connection  ${REMOTE_HOST}
   Login  ${REMOTE_USERNAME}   ${REMOTE_PASSWORD}
 

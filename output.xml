@@ -1,43 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20180422 12:44:45.808" generator="Robot 3.0 (Python 2.7.5 on linux2)">
+<robot generated="20180422 13:14:52.061" generator="Robot 3.0 (Python 2.7.5 on linux2)">
 <suite source="/home/tester/tester/zjazd9/plik4.robot" id="s1" name="Plik4">
 <test id="s1-t1" name="My test 01">
 <kw name="My log 01">
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>${MESSAGE}</arg>
+<arg>${MESSAGE01}</arg>
 </arguments>
-<status status="PASS" endtime="20180422 12:44:45.826" starttime="20180422 12:44:45.826"></status>
+<status status="PASS" endtime="20180422 13:14:52.103" starttime="20180422 13:14:52.103"></status>
 </kw>
-<status status="PASS" endtime="20180422 12:44:45.826" starttime="20180422 12:44:45.826"></status>
+<status status="PASS" endtime="20180422 13:14:52.103" starttime="20180422 13:14:52.102"></status>
 </kw>
-<status status="PASS" endtime="20180422 12:44:45.827" critical="yes" starttime="20180422 12:44:45.825"></status>
+<status status="PASS" endtime="20180422 13:14:52.103" critical="yes" starttime="20180422 13:14:52.102"></status>
 </test>
 <test id="s1-t2" name="My test 02">
 <kw name="My log 02">
+<arguments>
+<arg>jakis glupi tekst</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${MESSAGE02}</arg>
+</arguments>
+<status status="PASS" endtime="20180422 13:14:52.104" starttime="20180422 13:14:52.104"></status>
+</kw>
+<status status="PASS" endtime="20180422 13:14:52.104" starttime="20180422 13:14:52.104"></status>
+</kw>
+<status status="PASS" endtime="20180422 13:14:52.104" critical="yes" starttime="20180422 13:14:52.103"></status>
+</test>
+<test id="s1-t3" name="My test 03">
+<kw name="My log 03">
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Goodbye</arg>
 </arguments>
-<status status="PASS" endtime="20180422 12:44:45.828" starttime="20180422 12:44:45.827"></status>
+<status status="PASS" endtime="20180422 13:14:52.105" starttime="20180422 13:14:52.105"></status>
 </kw>
-<status status="PASS" endtime="20180422 12:44:45.828" starttime="20180422 12:44:45.827"></status>
+<status status="PASS" endtime="20180422 13:14:52.105" starttime="20180422 13:14:52.105"></status>
 </kw>
-<status status="PASS" endtime="20180422 12:44:45.828" critical="yes" starttime="20180422 12:44:45.827"></status>
+<status status="PASS" endtime="20180422 13:14:52.105" critical="yes" starttime="20180422 13:14:52.104"></status>
 </test>
-<status status="PASS" endtime="20180422 12:44:45.828" starttime="20180422 12:44:45.809"></status>
+<test id="s1-t4" name="My test 04 SSH">
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${REMOTE_HOST}</arg>
+</arguments>
+<status status="PASS" endtime="20180422 13:14:52.106" starttime="20180422 13:14:52.106"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${REMOTE_USERNAME}</arg>
+<arg>${REMOTE_PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180422 13:14:52.106" level="INFO">Logging into 'localhost:22' as 'tester'.</msg>
+<msg timestamp="20180422 13:14:53.205" level="INFO">Read output: Last login: Sun Apr 22 13:11:46 2018 from localhost
+[tester@tester ~]$</msg>
+<status status="PASS" endtime="20180422 13:14:53.205" starttime="20180422 13:14:52.106"></status>
+</kw>
+<status status="PASS" endtime="20180422 13:14:53.205" critical="yes" starttime="20180422 13:14:52.105"></status>
+</test>
+<status status="PASS" endtime="20180422 13:14:53.206" starttime="20180422 13:14:52.061"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="2">Critical Tests</stat>
-<stat fail="0" pass="2">All Tests</stat>
+<stat fail="0" pass="4">Critical Tests</stat>
+<stat fail="0" pass="4">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="Plik4" pass="2">Plik4</stat>
+<stat fail="0" id="s1" name="Plik4" pass="4">Plik4</stat>
 </suite>
 </statistics>
 <errors>
