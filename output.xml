@@ -1,30 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20180422 12:32:58.558" generator="Robot 3.0 (Python 2.7.5 on linux2)">
+<robot generated="20180422 12:44:45.808" generator="Robot 3.0 (Python 2.7.5 on linux2)">
 <suite source="/home/tester/tester/zjazd9/plik4.robot" id="s1" name="Plik4">
 <test id="s1-t1" name="My test 01">
-<kw name="My log">
+<kw name="My log 01">
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${MESSAGE}</arg>
 </arguments>
-<status status="PASS" endtime="20180422 12:32:58.578" starttime="20180422 12:32:58.577"></status>
+<status status="PASS" endtime="20180422 12:44:45.826" starttime="20180422 12:44:45.826"></status>
 </kw>
-<status status="PASS" endtime="20180422 12:32:58.578" starttime="20180422 12:32:58.577"></status>
+<status status="PASS" endtime="20180422 12:44:45.826" starttime="20180422 12:44:45.826"></status>
 </kw>
-<status status="PASS" endtime="20180422 12:32:58.578" critical="yes" starttime="20180422 12:32:58.577"></status>
+<status status="PASS" endtime="20180422 12:44:45.827" critical="yes" starttime="20180422 12:44:45.825"></status>
 </test>
-<status status="PASS" endtime="20180422 12:32:58.578" starttime="20180422 12:32:58.559"></status>
+<test id="s1-t2" name="My test 02">
+<kw name="My log 02">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Goodbye</arg>
+</arguments>
+<status status="PASS" endtime="20180422 12:44:45.828" starttime="20180422 12:44:45.827"></status>
+</kw>
+<status status="PASS" endtime="20180422 12:44:45.828" starttime="20180422 12:44:45.827"></status>
+</kw>
+<status status="PASS" endtime="20180422 12:44:45.828" critical="yes" starttime="20180422 12:44:45.827"></status>
+</test>
+<status status="PASS" endtime="20180422 12:44:45.828" starttime="20180422 12:44:45.809"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="1">Critical Tests</stat>
-<stat fail="0" pass="1">All Tests</stat>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="Plik4" pass="1">Plik4</stat>
+<stat fail="0" id="s1" name="Plik4" pass="2">Plik4</stat>
 </suite>
 </statistics>
 <errors>
