@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20180422 13:14:52.061" generator="Robot 3.0 (Python 2.7.5 on linux2)">
+<robot generated="20180422 13:26:14.718" generator="Robot 3.0 (Python 2.7.5 on linux2)">
 <suite source="/home/tester/tester/zjazd9/plik4.robot" id="s1" name="Plik4">
+<kw type="setup" name="Open Connection And Log In">
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${REMOTE_HOST}</arg>
+</arguments>
+<status status="PASS" endtime="20180422 13:26:14.761" starttime="20180422 13:26:14.761"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${REMOTE_USERNAME}</arg>
+<arg>${REMOTE_PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180422 13:26:14.762" level="INFO">Logging into 'localhost:22' as 'tester'.</msg>
+<msg timestamp="20180422 13:26:15.859" level="INFO">Read output: Last login: Sun Apr 22 13:23:43 2018 from localhost
+[tester@tester ~]$</msg>
+<status status="PASS" endtime="20180422 13:26:15.859" starttime="20180422 13:26:14.761"></status>
+</kw>
+<status status="PASS" endtime="20180422 13:26:15.859" starttime="20180422 13:26:14.761"></status>
+</kw>
 <test id="s1-t1" name="My test 01">
 <kw name="My log 01">
 <kw name="Log To Console" library="BuiltIn">
@@ -8,11 +29,11 @@
 <arguments>
 <arg>${MESSAGE01}</arg>
 </arguments>
-<status status="PASS" endtime="20180422 13:14:52.103" starttime="20180422 13:14:52.103"></status>
+<status status="PASS" endtime="20180422 13:26:15.861" starttime="20180422 13:26:15.860"></status>
 </kw>
-<status status="PASS" endtime="20180422 13:14:52.103" starttime="20180422 13:14:52.102"></status>
+<status status="PASS" endtime="20180422 13:26:15.861" starttime="20180422 13:26:15.860"></status>
 </kw>
-<status status="PASS" endtime="20180422 13:14:52.103" critical="yes" starttime="20180422 13:14:52.102"></status>
+<status status="PASS" endtime="20180422 13:26:15.861" critical="yes" starttime="20180422 13:26:15.860"></status>
 </test>
 <test id="s1-t2" name="My test 02">
 <kw name="My log 02">
@@ -24,11 +45,11 @@
 <arguments>
 <arg>${MESSAGE02}</arg>
 </arguments>
-<status status="PASS" endtime="20180422 13:14:52.104" starttime="20180422 13:14:52.104"></status>
+<status status="PASS" endtime="20180422 13:26:15.862" starttime="20180422 13:26:15.862"></status>
 </kw>
-<status status="PASS" endtime="20180422 13:14:52.104" starttime="20180422 13:14:52.104"></status>
+<status status="PASS" endtime="20180422 13:26:15.862" starttime="20180422 13:26:15.861"></status>
 </kw>
-<status status="PASS" endtime="20180422 13:14:52.104" critical="yes" starttime="20180422 13:14:52.103"></status>
+<status status="PASS" endtime="20180422 13:26:15.862" critical="yes" starttime="20180422 13:26:15.861"></status>
 </test>
 <test id="s1-t3" name="My test 03">
 <kw name="My log 03">
@@ -37,19 +58,20 @@
 <arguments>
 <arg>Goodbye</arg>
 </arguments>
-<status status="PASS" endtime="20180422 13:14:52.105" starttime="20180422 13:14:52.105"></status>
+<status status="PASS" endtime="20180422 13:26:15.863" starttime="20180422 13:26:15.863"></status>
 </kw>
-<status status="PASS" endtime="20180422 13:14:52.105" starttime="20180422 13:14:52.105"></status>
+<status status="PASS" endtime="20180422 13:26:15.863" starttime="20180422 13:26:15.863"></status>
 </kw>
-<status status="PASS" endtime="20180422 13:14:52.105" critical="yes" starttime="20180422 13:14:52.104"></status>
+<status status="PASS" endtime="20180422 13:26:15.863" critical="yes" starttime="20180422 13:26:15.862"></status>
 </test>
 <test id="s1-t4" name="My test 04 SSH">
+<kw name="Open Connection And Log In">
 <kw name="Open Connection" library="SSHLibrary">
 <doc>Opens a new SSH connection to the given `host` and `port`.</doc>
 <arguments>
 <arg>${REMOTE_HOST}</arg>
 </arguments>
-<status status="PASS" endtime="20180422 13:14:52.106" starttime="20180422 13:14:52.106"></status>
+<status status="PASS" endtime="20180422 13:26:15.864" starttime="20180422 13:26:15.864"></status>
 </kw>
 <kw name="Login" library="SSHLibrary">
 <doc>Logs into the SSH server with the given `username` and `password`.</doc>
@@ -57,14 +79,20 @@
 <arg>${REMOTE_USERNAME}</arg>
 <arg>${REMOTE_PASSWORD}</arg>
 </arguments>
-<msg timestamp="20180422 13:14:52.106" level="INFO">Logging into 'localhost:22' as 'tester'.</msg>
-<msg timestamp="20180422 13:14:53.205" level="INFO">Read output: Last login: Sun Apr 22 13:11:46 2018 from localhost
+<msg timestamp="20180422 13:26:15.865" level="INFO">Logging into 'localhost:22' as 'tester'.</msg>
+<msg timestamp="20180422 13:26:16.957" level="INFO">Read output: Last login: Sun Apr 22 13:26:14 2018 from localhost
 [tester@tester ~]$</msg>
-<status status="PASS" endtime="20180422 13:14:53.205" starttime="20180422 13:14:52.106"></status>
+<status status="PASS" endtime="20180422 13:26:16.958" starttime="20180422 13:26:15.864"></status>
 </kw>
-<status status="PASS" endtime="20180422 13:14:53.205" critical="yes" starttime="20180422 13:14:52.105"></status>
+<status status="PASS" endtime="20180422 13:26:16.959" starttime="20180422 13:26:15.864"></status>
+</kw>
+<status status="PASS" endtime="20180422 13:26:16.959" critical="yes" starttime="20180422 13:26:15.863"></status>
 </test>
-<status status="PASS" endtime="20180422 13:14:53.206" starttime="20180422 13:14:52.061"></status>
+<kw type="teardown" name="Close All Connections" library="SSHLibrary">
+<doc>Closes all open connections.</doc>
+<status status="PASS" endtime="20180422 13:26:17.095" starttime="20180422 13:26:16.962"></status>
+</kw>
+<status status="PASS" endtime="20180422 13:26:17.096" starttime="20180422 13:26:14.719"></status>
 </suite>
 <statistics>
 <total>

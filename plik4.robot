@@ -1,5 +1,7 @@
 *** Settings ***
 Library  SSHLibrary
+Suite Setup  Open Connection And Log In
+Suite Teardown  Close All Connections
 
 *** Variables ***
 ${MESSAGE01}  Hello Patrycja!
@@ -18,8 +20,7 @@ My test 03
   My log 03
 
 My test 04 SSH
-  Open Connection  ${REMOTE_HOST}
-  Login  ${REMOTE_USERNAME}   ${REMOTE_PASSWORD}
+  Open Connection And Log In
 
 *** Keywords ***
 My log 01
@@ -31,3 +32,7 @@ My log 02
 
 My log 03
   Log to console  Goodbye
+
+Open Connection And Log In
+  Open Connection  ${REMOTE_HOST}
+  Login  ${REMOTE_USERNAME}   ${REMOTE_PASSWORD}
