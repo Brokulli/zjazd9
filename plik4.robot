@@ -1,9 +1,9 @@
+*** Variables ***
+${MESSAGE}  Hello Patrycja!
+
 *** Test Cases ***
 My test 01
   My log
-
-*** Variables ***
-${MESSAGE}  Hello Patrycja !
 
 *** Keywords ***
 My log
