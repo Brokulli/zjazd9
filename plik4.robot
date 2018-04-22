@@ -1,8 +1,11 @@
 *** Settings ***
-Library SSHLibrary
+Library  SSHLibrary
 
 *** Variables ***
 ${MESSAGE01}  Hello Patrycja!
+${REMOTE_HOST}  localhost
+${REMOTE_USERNAME}  tester
+${REMOTE_PASSWORD}  adam
 
 *** Test Cases ***
 My test 01
@@ -13,6 +16,10 @@ My test 02
 
 My test 03
   My log 03
+
+My test 04
+  Open Connection  ${REMOTE_HOST}
+  Login  ${REMOTE_USERNAME}   ${REMOTE_PASSWORD}
 
 *** Keywords ***
 My log 01
