@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20180422 14:48:55.537" generator="Robot 3.0 (Python 2.7.5 on linux2)">
+<robot generated="20180422 15:00:49.637" generator="Robot 3.0 (Python 2.7.5 on linux2)">
 <suite source="/home/tester/tester/zjazd9/plik5.robot" id="s1" name="Plik5">
 <kw type="setup" name="Open Browser To Login Page">
 <kw name="Open Browser" library="Selenium2Library">
@@ -7,41 +7,41 @@
 <arguments>
 <arg>${WEBSITE}</arg>
 </arguments>
-<msg timestamp="20180422 14:48:55.700" level="INFO">Opening browser 'firefox' to base url 'http://www.poczta.wp.pl/'</msg>
-<status status="PASS" endtime="20180422 14:49:01.038" starttime="20180422 14:48:55.700"></status>
+<msg timestamp="20180422 15:00:49.704" level="INFO">Opening browser 'firefox' to base url 'http://www.poczta.wp.pl/'</msg>
+<status status="PASS" endtime="20180422 15:00:53.098" starttime="20180422 15:00:49.704"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20180422 14:49:01.149" starttime="20180422 14:49:01.038"></status>
+<status status="PASS" endtime="20180422 15:00:53.207" starttime="20180422 15:00:53.098"></status>
 </kw>
-<status status="PASS" endtime="20180422 14:49:01.150" starttime="20180422 14:48:55.699"></status>
+<status status="PASS" endtime="20180422 15:00:53.208" starttime="20180422 15:00:49.704"></status>
 </kw>
 <test id="s1-t1" name="Go To Website">
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
 <arguments>
 <arg>//*[@id='login']</arg>
-<arg>${LOGIN}</arg>
+<arg>${VALID_LOGIN}</arg>
 </arguments>
-<msg timestamp="20180422 14:49:01.152" level="INFO">Typing text 'testerwsb_t1' into text field '//*[@id='login']'</msg>
-<status status="PASS" endtime="20180422 14:49:01.319" starttime="20180422 14:49:01.151"></status>
+<msg timestamp="20180422 15:00:53.209" level="INFO">Typing text 'testerwsb_t1' into text field '//*[@id='login']'</msg>
+<status status="PASS" endtime="20180422 15:00:53.352" starttime="20180422 15:00:53.208"></status>
 </kw>
 <kw name="Input Password" library="Selenium2Library">
 <doc>Types the given password into text field identified by `locator`.</doc>
 <arguments>
 <arg>//*[@id='password']</arg>
-<arg>${PASSWORD}</arg>
+<arg>${VALID_PASSWORD}</arg>
 </arguments>
-<msg timestamp="20180422 14:49:01.320" level="INFO">Typing password into text field '//*[@id='password']'</msg>
-<status status="PASS" endtime="20180422 14:49:01.389" starttime="20180422 14:49:01.319"></status>
+<msg timestamp="20180422 15:00:53.353" level="INFO">Typing password into text field '//*[@id='password']'</msg>
+<status status="PASS" endtime="20180422 15:00:53.426" starttime="20180422 15:00:53.353"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>//*[@id='btnSubmit']</arg>
 </arguments>
-<msg timestamp="20180422 14:49:01.390" level="INFO">Clicking button '//*[@id='btnSubmit']'.</msg>
-<status status="PASS" endtime="20180422 14:49:04.528" starttime="20180422 14:49:01.390"></status>
+<msg timestamp="20180422 15:00:53.427" level="INFO">Clicking button '//*[@id='btnSubmit']'.</msg>
+<status status="PASS" endtime="20180422 15:00:56.549" starttime="20180422 15:00:53.427"></status>
 </kw>
 <kw name="Get Text" library="Selenium2Library">
 <doc>Returns the text value of element identified by `locator`.</doc>
@@ -51,8 +51,8 @@
 <assign>
 <var>${TEXT}</var>
 </assign>
-<msg timestamp="20180422 14:49:04.590" level="INFO">${TEXT} = Odebrane</msg>
-<status status="PASS" endtime="20180422 14:49:04.590" starttime="20180422 14:49:04.528"></status>
+<msg timestamp="20180422 15:00:56.599" level="INFO">${TEXT} = Odebrane</msg>
+<status status="PASS" endtime="20180422 15:00:56.599" starttime="20180422 15:00:56.550"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -60,15 +60,15 @@
 <arg>${TEXT}</arg>
 <arg>Odebrane</arg>
 </arguments>
-<status status="PASS" endtime="20180422 14:49:04.591" starttime="20180422 14:49:04.591"></status>
+<status status="PASS" endtime="20180422 15:00:56.600" starttime="20180422 15:00:56.599"></status>
 </kw>
-<status status="PASS" endtime="20180422 14:49:04.591" critical="yes" starttime="20180422 14:49:01.150"></status>
+<status status="PASS" endtime="20180422 15:00:56.600" critical="yes" starttime="20180422 15:00:53.208"></status>
 </test>
 <kw type="teardown" name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20180422 14:49:04.629" starttime="20180422 14:49:04.592"></status>
+<status status="PASS" endtime="20180422 15:00:56.644" starttime="20180422 15:00:56.601"></status>
 </kw>
-<status status="PASS" endtime="20180422 14:49:04.629" starttime="20180422 14:48:55.538"></status>
+<status status="PASS" endtime="20180422 15:00:56.645" starttime="20180422 15:00:49.638"></status>
 </suite>
 <statistics>
 <total>
