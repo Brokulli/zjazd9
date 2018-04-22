@@ -1,3 +1,6 @@
+*** Settings ***
+Library SSHLibrary
+
 *** Variables ***
 ${MESSAGE}  Hello Patrycja!
 
