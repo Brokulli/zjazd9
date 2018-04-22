@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20180422 11:10:35.571" generator="Robot 3.0 (Python 2.7.5 on linux2)">
+<robot generated="20180422 12:29:23.267" generator="Robot 3.0 (Python 2.7.5 on linux2)">
 <suite source="/home/tester/tester/zjazd9/plik4.robot" id="s1" name="Plik4">
-<test id="s1-t1" name="My test">
+<test id="s1-t1" name="My test 01">
+<kw name="My log">
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>Hello Patrycja!</arg>
+<arg>${MESSAGE}</arg>
 </arguments>
-<status status="PASS" endtime="20180422 11:10:35.589" starttime="20180422 11:10:35.589"></status>
+<status status="PASS" endtime="20180422 12:29:23.285" starttime="20180422 12:29:23.285"></status>
 </kw>
-<status status="PASS" endtime="20180422 11:10:35.589" critical="yes" starttime="20180422 11:10:35.588"></status>
+<status status="PASS" endtime="20180422 12:29:23.285" starttime="20180422 12:29:23.285"></status>
+</kw>
+<status status="PASS" endtime="20180422 12:29:23.286" critical="yes" starttime="20180422 12:29:23.284"></status>
 </test>
-<status status="PASS" endtime="20180422 11:10:35.589" starttime="20180422 11:10:35.572"></status>
+<status status="PASS" endtime="20180422 12:29:23.286" starttime="20180422 12:29:23.268"></status>
 </suite>
 <statistics>
 <total>

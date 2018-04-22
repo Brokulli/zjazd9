@@ -1,3 +1,10 @@
 *** Test Cases ***
-My test
-  Log to console  Hello Patrycja!
+My test 01
+  My log
+
+*** Variables ***
+${MESSAGE}  Hello Patrycja !
+
+*** Keywords ***
+My log
+  Log to console  ${MESSAGE}
