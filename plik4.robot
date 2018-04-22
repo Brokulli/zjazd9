@@ -22,6 +22,11 @@ My test 03
 My test 04 SSH
   Open Connection And Log In
 
+My test 05
+  Open Connection And Log In
+  ${output}=    Execute command    uname -a
+  Should contain  ${output}    GNU/Linux
+
 *** Keywords ***
 My log 01
   Log to console  ${MESSAGE01}
